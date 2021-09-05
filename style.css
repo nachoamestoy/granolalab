@@ -1,0 +1,389 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 99%;
+    height: 100%;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 15%;
+    border-bottom-style: solid;
+    text-decoration: none;
+    background-color: white;
+
+
+}
+
+.logoHeader{
+
+width: 10%;
+height: 10%;
+}
+
+.linkLogo{
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    width: 100px; 
+    height: 100px;
+}
+
+.menuHeader{
+    text-align: right;
+}
+
+.listaPadre{
+    width: 98%;
+    margin: 0;
+padding-top: 60px;
+padding-bottom: 60px;
+padding-left: 0;
+text-align: right;
+}
+
+.listaMenu{
+display: inline;
+list-style: none;
+text-align: right;
+text-decoration: none;
+color: black;
+font-weight: bold;
+padding: 15px;
+text-transform: capitalize;
+}
+
+.listaMenu:hover{
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(98, 99, 98);
+}
+
+.textoIndex{
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.seccion1Nosotros{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 450px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+}
+.seccion1Nosotros img{
+    width: 60%;
+    height: 400px;
+    order: -1;
+    object-fit: cover;
+
+}
+
+.seccion1Nosotros p{
+    width: 35%;
+    height: 400px;
+    order: 1;
+    text-align: left;
+    font-size: 20px;
+}
+
+.seccion2Nosotros{
+    width: 100%;
+    height: 450px;
+    object-fit:cover;
+    opacity:80%;
+}
+
+.seccion3Nosotros{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 450px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.seccion3Nosotros img{
+    width: 60%;
+    height: 400px;
+    object-fit:cover;
+}
+
+.seccion3Nosotros p{
+    flex-basis: 35%;
+    height: 400px;
+    margin: 0;
+    font-size: 20px;
+
+}
+
+footer{
+
+display: flex;
+flex-direction: row;
+background-image: linear-gradient(to top,white, rgb(136, 135, 135));
+width: 100%;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+align-content: space-between;
+margin-top: 30px;
+
+}
+
+h3{
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+
+footer .menuFooter{
+flex-basis: 30%;
+margin-left: 5px;
+}
+
+footer nav ul li{
+    list-style: none;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    padding-top: 5px;
+    
+}
+
+footer nav ul li a{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+}
+
+footer nav ul li a:hover{
+    font-size: 18px;
+    color: rgb(111, 112, 112);
+    text-decoration: solid;   
+    }
+
+footer .contactanosFooter{
+    flex-basis: 30%;
+    color: black;
+}
+
+footer .contactanosFooter p:hover{
+    font-size: 18px;
+    color: rgb(111, 112, 112);
+    text-decoration: solid; 
+}
+
+footer .redesFooter{
+    flex-basis: 30%;
+}
+
+footer .iconosRedes{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+footer .iconosRedes:hover{
+    transform: scale(1.05,1.05);
+}
+
+.tituloProductos{
+    text-align: center;
+    font-size: 35px;
+    margin: 15px;
+
+}
+
+.listadoProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    
+}
+
+
+.productos{
+    flex-basis: 300px;
+    height: 300px;
+    text-align: center;
+    background-color: rgb(248, 247, 247);
+    margin: 20px;
+    border-style: solid;
+    border-color: rgb(227, 229, 230);
+    border-width: thin;
+    text-decoration: none;
+}
+
+.productos:hover{
+    transform: scale(1.05,1.05);
+    }
+
+.imagenesProductos{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    padding-top: 20px;
+}
+
+
+.carrousel{
+    width: 99%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.subtituloProductos{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.subtituloPrecios{
+    font-size: 14px;
+}
+
+.contactoPadre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin-top: 20px;
+}
+
+.contactoImagenes{
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.contactoImagenes:hover{
+    transform: scale(1.05,1.05);
+}
+
+.textoCobertura{
+    margin: 20px;
+}
+
+.imagenCobertura{
+    display: flex; 
+    align-items: center; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.verMas{
+    font-size: 14px;
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(83, 83, 83);
+}
+
+.verMas:hover{
+font-size: 16px;
+font-weight: bold;
+color: dimgray;
+}
+
+h1{
+    background-image: url(imagenes/carrousel.jpeg);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 90%;
+    margin: 0%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.subtituloContacto{
+    font-size: 20px;
+}
+
+.formulario{
+    background-color: rgb(226, 225, 225);
+    padding: 10px;
+}
+
+.formularioInput{
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+}
+
+@media (max-width: 726px) {
+    .listaMenu{
+        font-size: 10px;
+        padding: 10px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(136, 135, 135);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        
+        }
+.menuFooter{
+    text-align:center;
+}
+.contactanosFooter{
+    text-align:center;
+}
+.redesFooter{
+    text-align:center;
+}
+
+footer nav ul li{
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-top: 5px;
+    
+}
+
+.seccion1Nosotros p{
+    font-size: 15px;
+}
+
+.seccion3Nosotros p{
+    font-size: 15px;
+}
+
+ }
+
+ @media (max-width: 576px) {
+    .seccion1Nosotros p{
+        font-size: 12px;
+    }
+    
+    .seccion3Nosotros p{
+        font-size: 12px;
+    }
+}
