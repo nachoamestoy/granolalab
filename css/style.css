@@ -16,17 +16,6 @@ width: 10%;
 height: 10%;
 }
 
-.linkLogo{
-    position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    width: 100px; 
-    height: 100px;
-}
-
-.menuHeader{
-    text-align: right;
-}
 
 .listaPadre{
     width: 98%;
@@ -34,7 +23,7 @@ height: 10%;
 padding-top: 60px;
 padding-bottom: 60px;
 padding-left: 0;
-text-align: right;
+
 }
 
 .listaMenu{
@@ -54,71 +43,7 @@ text-transform: capitalize;
     color: rgb(98, 99, 98);
 }
 
-.textoIndex{
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-    margin-top: 10px;
-    font-weight: bold;
-}
 
-.seccion1Nosotros{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 450px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    
-
-}
-.imagenSeccion1Nosotros{
-    width: 300px;
-    height: 400px;
-    order: -1;
-    object-fit: cover;
-
-}
-
-.textoSeccion1Nosotros{
-    width: 400px;
-    height: 400px;
-    order: 1;
-    text-align: left;
-    font-size: 20px;
-}
-
-.seccion2Nosotros{
-    width: 100%;
-    height: 450px;
-    object-fit:cover;
-    opacity:80%;
-}
-
-.seccion3Nosotros{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    height: 450px;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.seccion3Nosotros img{
-    width: 60%;
-    height: 400px;
-    object-fit:cover;
-}
-
-.seccion3Nosotros p{
-    flex-basis: 35%;
-    height: 400px;
-    margin: 0;
-    font-size: 20px;
-
-}
 
 footer{
 
@@ -198,11 +123,16 @@ footer .iconosRedes:hover{
     transform: scale(1.05,1.05);
 }
 
+.seccion2Nosotros{
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+    opacity:80%;
+}
 .tituloProductos{
     text-align: center;
     font-size: 35px;
     margin: 15px;
-
 }
 
 .listadoProductos{
@@ -214,7 +144,6 @@ footer .iconosRedes:hover{
     align-content: space-between;
     
 }
-
 
 .productos{
     flex-basis: 300px;
@@ -246,6 +175,14 @@ footer .iconosRedes:hover{
     object-fit: cover;
 }
 
+.textoIndex{
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 .subtituloProductos{
     margin: 10px;
     font-weight: bold;
@@ -256,6 +193,45 @@ footer .iconosRedes:hover{
 
 .subtituloPrecios{
     font-size: 14px;
+}
+
+
+.verMas{
+    font-size: 14px;
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(83, 83, 83);
+}
+
+.verMas:hover{
+font-size: 16px;
+font-weight: bold;
+color: dimgray;
+}
+
+.tituloPaginas{
+    background-image: url(../imagenes/carrousel.jpeg);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 90%;
+    margin: 0%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.subtituloContacto{
+    font-size: 20px;
+}
+
+.formulario{
+    background-color: rgb(226, 225, 225);
+    padding: 10px;
+}
+
+.formularioInput{
+    margin-top: 4px;
+    margin-bottom: 4px;
+
 }
 
 .contactoPadre{
@@ -280,53 +256,6 @@ footer .iconosRedes:hover{
 
 .textoCobertura{
     margin: 20px;
-}
-
-.imagenCobertura{
-    display: flex; 
-    align-items: center; 
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.verMas{
-    font-size: 14px;
-    text-decoration: none;
-    font-style: italic;
-    color: rgb(83, 83, 83);
-}
-
-.verMas:hover{
-font-size: 16px;
-font-weight: bold;
-color: dimgray;
-}
-
-h1{
-    background-image: url(imagenes/carrousel.jpeg);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    opacity: 90%;
-    margin: 0%;
-    text-align: center;
-    font-size: 40px;
-}
-
-.subtituloContacto{
-    font-size: 20px;
-}
-
-.formulario{
-    background-color: rgb(226, 225, 225);
-    padding: 10px;
-}
-
-.formularioInput{
-    margin-top: 4px;
-    margin-bottom: 4px;
-
 }
 
 @media (max-width: 870px) {
@@ -398,6 +327,12 @@ footer nav ul li{
 
     .headerLogo {width: 100px;
     }
-    .listaPadre {padding-top: 10px; padding-bottom: 10px;}
+    .listaPadre {padding-top: 10px; padding-bottom: 10px; text-align: center;}
+    .listaMenu{padding: 5px; font-size: 9.5px;}
     .boton{display: none;}
+    .listaMenu:hover{
+        font-size: 10px;
+        font-weight: normal;
+        color: rgb(98, 99, 98);
+    }
 }
