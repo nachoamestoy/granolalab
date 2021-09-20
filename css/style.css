@@ -3,7 +3,9 @@ body {
   width: 99%;
   height: 100%; }
 
-header {
+/*Header*/
+
+  header {
   width: 100%;
   border-bottom-style: solid; }
 
@@ -29,6 +31,8 @@ header {
   font-weight: normal;
   color: #626362; }
 
+/*Footer*/
+
 footer {
   display: flex;
   flex-direction: row;
@@ -40,27 +44,28 @@ footer {
   align-content: space-evenly;
   margin-top: 30px;
   margin-left: 5px; }
-  footer .menuFooter {
-    flex-basis: 30%;
-    margin-left: 15px; }
-  footer nav ul li {
+footer .menuFooter {
+  flex-basis: 30%;
+  margin-left: 15px; }
+footer nav ul li {
+  list-style: none;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  padding-top: 5px;
+padding-right: 25px; }
+  footer nav ul li a {
     list-style: none;
-    text-align: left;
     text-decoration: none;
-    color: black;
-    padding-top: 5px; }
-    footer nav ul li a {
-      list-style: none;
-      text-decoration: none;
-      color: black; }
-  footer .redesFooter {
-    flex-basis: 30%;
-    padding-left: 70px; }
-  footer .iconosRedes {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    margin: 5px; }
+    color: black; }
+footer .redesFooter {
+  flex-basis: 30%;
+  padding-left: 70px; }
+footer .iconosRedes {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin: 5px; }
 
 footer nav ul li a:hover {
   font-size: 18px;
@@ -80,6 +85,17 @@ footer .contactanosFooter p:hover {
 footer .iconosRedes:hover {
   transform: scale(1.05, 1.05); }
 
+/*Título de páginas*/
+
+.tituloPaginas {
+  background-image: url(../imagenes/carrousel.jpeg);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  opacity: 90%;
+  margin: 0%;
+  text-align: center;
+  font-size: 40px; }
+
 h3 {
   color: black;
   font-weight: bold;
@@ -87,11 +103,29 @@ h3 {
   font-size: 24px;
   margin-top: 10px; }
 
+/*Index*/
+
+.carrousel {
+  width: 99%;
+  height: 300px;
+  object-fit: cover; }
+
+.textoIndex {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  margin-top: 10px;
+  font-weight: bold; }
+
+/*Nosotros*/
+
 .seccion2Nosotros {
   width: 100%;
   height: 200px;
   object-fit: cover;
   opacity: 80%; }
+
+/*Productos*/
 
 .tituloProductos {
   text-align: center;
@@ -126,18 +160,6 @@ h3 {
   object-fit: cover;
   padding-top: 20px; }
 
-.carrousel {
-  width: 99%;
-  height: 300px;
-  object-fit: cover; }
-
-.textoIndex {
-  text-align: center;
-  padding: 20px;
-  margin: 0;
-  margin-top: 10px;
-  font-weight: bold; }
-
 .subtituloProductos {
   margin: 10px;
   font-weight: bold;
@@ -159,14 +181,7 @@ h3 {
   font-weight: bold;
   color: dimgray; }
 
-.tituloPaginas {
-  background-image: url(../imagenes/carrousel.jpeg);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  opacity: 90%;
-  margin: 0%;
-  text-align: center;
-  font-size: 40px; }
+/*Contacto*/
 
 .subtituloContacto {
   font-size: 20px; }
@@ -198,6 +213,8 @@ h3 {
 
 .textoCobertura {
   margin: 20px; }
+
+/*Media queries*/
 
 @media (max-width: 870px) {
   .header__listaMenu {
